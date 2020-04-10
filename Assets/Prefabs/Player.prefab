@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 4240376633826143631}
   - component: {fileID: 4240376633826143625}
   - component: {fileID: 4240376633826143629}
+  - component: {fileID: 685304396}
+  - component: {fileID: 9210486502901012258}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,7 +232,7 @@ MonoBehaviour:
   waterGravityScaleSwim: 0.5
   swimVelocity: 3
   drownVelocity: 2
-  sideVelocity: 3
+  sideVelocity: 2
 --- !u!114 &4240376633826143629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +298,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &685304396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240376633826143638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3475a55de6ac67589db9ebf2d0a50d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadlyForce: 10
+--- !u!114 &9210486502901012258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240376633826143638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61055703418a1a240bd78f37f40e5d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneID: 2
 --- !u!1 &8749781677066629662
 GameObject:
   m_ObjectHideFlags: 0
