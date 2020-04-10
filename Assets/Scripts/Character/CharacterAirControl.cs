@@ -14,6 +14,8 @@ public class CharacterAirControl : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius = 0.25f;
     public float coyoteTime = 0.1f;
+
+    public LayerMask whatIsSlope;
     public Transform slopeCheck;
     public float slopeCheckRadius = 0.5f;
     private float lastGroundedTime;
@@ -51,11 +53,11 @@ public class CharacterAirControl : MonoBehaviour {
 
         movement = inputMovement;
         Debug.DrawLine(slopeCheck.position, slopeCheck.position + slopeCheckRadius * Vector3.left);
-        if (Physics2D.Raycast(slopeCheck.position, Vector2.left, slopeCheckRadius, whatIsGround))
+        if (Physics2D.Raycast(slopeCheck.position, Vector2.left, slopeCheckRadius, whatIsSlope))
             movement = Mathf.Max(0f, movement);
 
         Debug.DrawLine(slopeCheck.position, slopeCheck.position + slopeCheckRadius * Vector3.right);
-        if (Physics2D.Raycast(slopeCheck.position, Vector2.right, slopeCheckRadius, whatIsGround))
+        if (Physics2D.Raycast(slopeCheck.position, Vector2.right, slopeCheckRadius, whatIsSlope))
             movement = Mathf.Min(0f, movement);
     }
 

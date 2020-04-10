@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6952000758436474987}
   - component: {fileID: 1602513719725731622}
   - component: {fileID: 3277188403694484182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Deadly Item
   m_Icon: {fileID: 0}
