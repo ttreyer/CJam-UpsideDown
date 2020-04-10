@@ -4,10 +4,12 @@ using UnityEngine.InputSystem;
 
 public class CharacterAnimationControl : MonoBehaviour
 {
+    [SerializeField] public bool isInWater = false;
+    
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.5f;
-    
+
     private Rigidbody2D _rb;
     private Animator _animator;
     private bool _flip = false;
@@ -49,5 +51,8 @@ public class CharacterAnimationControl : MonoBehaviour
         
         _animator.SetFloat("velocity.y", _rb.velocity.y);
         _animator.SetBool("isGrounded", _isGrounded);
+        _animator.SetBool("isInWater", isInWater);
     }
+
+    public void IsInWater(bool itIs) => isInWater = itIs;
 }
