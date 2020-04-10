@@ -14,20 +14,22 @@ public class CharacterAirControl : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius = 0.25f;
     public float coyoteTime = 0.1f;
+    public Transform slopeCheck;
+    public float slopeCheckRadius = 0.5f;
     private float lastGroundedTime;
 
     private Rigidbody2D rbody;
 
+    private float inputMovement;
     private float movement;
     private bool jump;
 
     /* Input handling */
     private void OnMovement(InputValue value) =>
-        movement = value.Get<float>();
+        inputMovement = value.Get<float>();
 
     private void OnJump (InputValue value) =>
         jump = value.Get<float>() > 0f;
-
 
     /* Setup */
     private void Awake() {
@@ -43,8 +45,18 @@ public class CharacterAirControl : MonoBehaviour {
         Time.time <= lastGroundedTime + coyoteTime;
 
     private void Update() {
-        if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround))
+        Debug.DrawLine(groundCheck.position, groundCheck.position + groundCheckRadius * Vector3.down);
+        if (Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, whatIsGround))
             lastGroundedTime = Time.time;
+
+        movement = inputMovement;
+        Debug.DrawLine(slopeCheck.position, slopeCheck.position + slopeCheckRadius * Vector3.left);
+        if (Physics2D.Raycast(slopeCheck.position, Vector2.left, slopeCheckRadius, whatIsGround))
+            movement = Mathf.Max(0f, movement);
+
+        Debug.DrawLine(slopeCheck.position, slopeCheck.position + slopeCheckRadius * Vector3.right);
+        if (Physics2D.Raycast(slopeCheck.position, Vector2.right, slopeCheckRadius, whatIsGround))
+            movement = Mathf.Min(0f, movement);
     }
 
     private void FixedUpdate() {
