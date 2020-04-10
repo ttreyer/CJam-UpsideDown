@@ -10,7 +10,8 @@ public class CharacterAirControl : MonoBehaviour {
     public LayerMask whatIsGround;
     public Transform groundCheck;
     public float groundCheckRadius;
-    private bool isGrounded;
+    public float coyoteTime;
+    private float lastGroundedTime;
 
     private Rigidbody2D rbody;
 
@@ -33,11 +34,12 @@ public class CharacterAirControl : MonoBehaviour {
     }
 
     private bool CanJump() {
-        return isGrounded;
+        return Time.time <= lastGroundedTime + coyoteTime;
     }
 
     private void Update() {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround))
+            lastGroundedTime = Time.time;
     }
 
     private void FixedUpdate() {
