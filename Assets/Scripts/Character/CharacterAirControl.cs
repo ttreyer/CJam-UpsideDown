@@ -27,7 +27,6 @@ public class CharacterAirControl : MonoBehaviour
     private float lastGroundedTime;
     
     private Rigidbody2D rbody;
-    private Animator animator;
 
     private float inputMovement;
     private float movement;
@@ -46,7 +45,6 @@ public class CharacterAirControl : MonoBehaviour
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -61,10 +59,11 @@ public class CharacterAirControl : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, whatIsGround);
         Debug.DrawLine(groundCheck.position, groundCheck.position + groundCheckRadius * Vector3.down);
-        if (Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, whatIsGround))
+        if (isGrounded)
             lastGroundedTime = Time.time;
-
+        
         movement = inputMovement;
         Debug.DrawLine(slopeCheck.position, slopeCheck.position + slopeCheckRadius * Vector3.left);
         if (Physics2D.Raycast(slopeCheck.position, Vector2.left, slopeCheckRadius, whatIsSlope))
@@ -94,6 +93,5 @@ public class CharacterAirControl : MonoBehaviour
             velocity.y += Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
 
         rbody.velocity = velocity;
-        animator.SetBool("isJumping", jump);
     }
 }

@@ -370,6 +370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf4b69c90e6cc767ae87d5f3b10fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 768
+  groundCheck: {fileID: 4240376633752535156}
+  groundCheckRadius: 1
 --- !u!1 &8749781677066629662
 GameObject:
   m_ObjectHideFlags: 0
