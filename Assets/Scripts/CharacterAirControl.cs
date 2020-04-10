@@ -5,12 +5,15 @@ using UnityEngine.InputSystem;
 
 public class CharacterAirControl : MonoBehaviour {
     public float maxSpeed = 5f;
-    public float jumpVelocity = 20f;
+    public float jumpVelocity = 7f;
+
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
     public LayerMask whatIsGround;
     public Transform groundCheck;
-    public float groundCheckRadius;
-    public float coyoteTime;
+    public float groundCheckRadius = 0.25f;
+    public float coyoteTime = 0.1f;
     private float lastGroundedTime;
 
     private Rigidbody2D rbody;
@@ -25,6 +28,8 @@ public class CharacterAirControl : MonoBehaviour {
     private void OnJump (InputValue value) =>
         jump = value.Get<float>() > 0f;
 
+
+    /* Setup */
     private void Awake() {
         rbody = GetComponent<Rigidbody2D>();
     }
@@ -33,9 +38,9 @@ public class CharacterAirControl : MonoBehaviour {
         rbody.gravityScale = 1;
     }
 
-    private bool CanJump() {
-        return Time.time <= lastGroundedTime + coyoteTime;
-    }
+    /* Jump & Movement */
+    private bool CanJump() =>
+        Time.time <= lastGroundedTime + coyoteTime;
 
     private void Update() {
         if (Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround))
@@ -47,6 +52,11 @@ public class CharacterAirControl : MonoBehaviour {
 
         if (jump && CanJump())
             velocity.y = jumpVelocity;
+
+        if (rbody.velocity.y < 0)
+            velocity.y += Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
+        else if (!jump && rbody.velocity.y > 0)
+            velocity.y += Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
 
         rbody.velocity = velocity;
     }

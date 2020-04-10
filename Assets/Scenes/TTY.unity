@@ -603,13 +603,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  jumpVelocity: 5
+  jumpVelocity: 7
+  fallMultiplier: 3
+  lowJumpMultiplier: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
   groundCheck: {fileID: 1974597981}
   groundCheckRadius: 0.25
-  coyoteTime: 0.2
+  coyoteTime: 0.1
 --- !u!70 &1420494780
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
