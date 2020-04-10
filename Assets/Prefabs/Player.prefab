@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 4240376633826143629}
   - component: {fileID: 685304396}
   - component: {fileID: 9210486502901012258}
+  - component: {fileID: 4240376632574367325}
+  - component: {fileID: 4240376632574367335}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -110,7 +112,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6462463899704803905, guid: 4692a947c595a8149a9c781ca25fd8a6,
+  m_Sprite: {fileID: -3316437661583186769, guid: 0382fd1f1118a7bbebb4fcb367b55e59,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -217,6 +219,8 @@ MonoBehaviour:
     m_Bits: 256
   slopeCheck: {fileID: 3961482687452483632}
   slopeCheckRadius: 0.5
+  waterJumpVelocity: 6
+  waterJumpMinVRequired: 2
 --- !u!114 &4240376633826143625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +302,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4240376633826143631}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &685304396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +339,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneID: 2
+--- !u!95 &4240376632574367325
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240376633826143638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a271dd3252b8ac88294046b80ecd7ba0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4240376632574367335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240376633826143638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf4b69c90e6cc767ae87d5f3b10fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8749781677066629662
 GameObject:
   m_ObjectHideFlags: 0

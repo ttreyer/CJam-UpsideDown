@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CharacterAirControl : MonoBehaviour {
+public class CharacterAirControl : MonoBehaviour
+{
     public float maxSpeed = 5f;
     public float jumpVelocity = 7f;
 
@@ -18,35 +20,47 @@ public class CharacterAirControl : MonoBehaviour {
     public LayerMask whatIsSlope;
     public Transform slopeCheck;
     public float slopeCheckRadius = 0.5f;
-    private float lastGroundedTime;
 
+    public float waterJumpVelocity = 6.0f;
+    public float waterJumpMinVRequired = 2.0f;
+    
+    private float lastGroundedTime;
+    
     private Rigidbody2D rbody;
+    private Animator animator;
 
     private float inputMovement;
     private float movement;
     private bool jump;
+    private bool waterTransition;
+    private bool isGrounded;
 
     /* Input handling */
     private void OnMovement(InputValue value) =>
         inputMovement = value.Get<float>();
 
-    private void OnJump (InputValue value) =>
+    private void OnJump(InputValue value) =>
         jump = value.Get<float>() > 0f;
 
     /* Setup */
-    private void Awake() {
+    private void Awake()
+    {
         rbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    private void OnEnable() {
+    private void OnEnable()
+    {
         rbody.gravityScale = 1;
+        waterTransition = true;
     }
 
     /* Jump & Movement */
     private bool CanJump() =>
         Time.time <= lastGroundedTime + coyoteTime;
 
-    private void Update() {
+    private void Update()
+    {
         Debug.DrawLine(groundCheck.position, groundCheck.position + groundCheckRadius * Vector3.down);
         if (Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, whatIsGround))
             lastGroundedTime = Time.time;
@@ -61,11 +75,18 @@ public class CharacterAirControl : MonoBehaviour {
             movement = Mathf.Min(0f, movement);
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         var velocity = new Vector2(movement * maxSpeed, rbody.velocity.y);
 
         if (jump && CanJump())
             velocity.y = jumpVelocity;
+
+        if(waterTransition && rbody.velocity.y > waterJumpMinVRequired)
+        {
+            velocity.y = waterJumpVelocity;
+            waterTransition = false;
+        }
 
         if (rbody.velocity.y < 0)
             velocity.y += Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
@@ -73,5 +94,6 @@ public class CharacterAirControl : MonoBehaviour {
             velocity.y += Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
 
         rbody.velocity = velocity;
+        animator.SetBool("isJumping", jump);
     }
 }
