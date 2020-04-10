@@ -5,10 +5,10 @@ using UnityEngine.InputSystem;
 public class CharacterWaterControl : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float waterGravityScaleSwim = 4.0f;
-    [SerializeField] private float swimVelocity = 50.0f;
+    [SerializeField] private float waterGravityScaleSwim = 0.5f;
+    [SerializeField] private float swimVelocity = 3.0f;
     [SerializeField] private float drownVelocity = 2.0f;
-    [SerializeField] private float sideVelocity = 2.0f;
+    [SerializeField] private float sideVelocity = 3.0f;
 
     private bool _swim = false;
     private bool _isSwimming = false;
@@ -28,7 +28,6 @@ public class CharacterWaterControl : MonoBehaviour
     {
         if (_swim)
         {
-            // rb.AddForce(Vector2.up*swimForce);
             rb.velocity = Vector2.up * swimVelocity;
             _isSwimming = true;
             _swim = false;
