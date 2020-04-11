@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public int nextSceneID;
 
     private void OnTriggerEnter2D(Collider2D collision) {
        if(collision.gameObject.CompareTag("Finish"))
        {
-           SceneManager.LoadScene (nextSceneID);
+           SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
        }
     }
 }
