@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 4240376633826143625}
   - component: {fileID: 685304396}
   - component: {fileID: 9210486502901012258}
+  - component: {fileID: 1949180779}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -344,6 +345,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1949180779}
+        m_MethodName: SetMusicInWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onWaterExit:
     m_PersistentCalls:
       m_Calls:
@@ -372,6 +384,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2799051628841539172}
         m_MethodName: IsInWater
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1949180779}
+        m_MethodName: SetMusicInAir
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -448,6 +471,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61055703418a1a240bd78f37f40e5d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1949180779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240376633826143638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7204fb65b1f4472b5adc53ebb0c200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8749781677066629662
