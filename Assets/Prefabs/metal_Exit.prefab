@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4890725065428279055}
   - component: {fileID: 5121318369002894642}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: metal_Exit
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 275310011
   m_SortingLayer: -2
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 32b6de9aa3a2a463ca62339ef7158a90, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d033bdb480ef43549b95c38914404b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
