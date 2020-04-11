@@ -290,8 +290,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.14}
-  m_Size: {x: 0.72, y: 1.325}
+  m_Offset: {x: -0.014258385, y: -0.13999999}
+  m_Size: {x: 0.4633522, y: 1.325}
   m_Direction: 0
 --- !u!114 &4240376633826143629
 MonoBehaviour:
@@ -406,7 +406,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   slopeCheck: {fileID: 3961482687452483632}
-  slopeCheckRadius: 0.5
+  slopeCheckRadius: 0.65
   waterJumpVelocity: 6
   waterJumpMinVRequired: 2
 --- !u!114 &4240376633826143625
@@ -474,7 +474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8749781677066629662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalPosition: {x: 0, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4240376633826143637}
