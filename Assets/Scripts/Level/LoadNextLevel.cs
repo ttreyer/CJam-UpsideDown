@@ -10,6 +10,7 @@ public class LoadNextLevel : MonoBehaviour
        if(collision.gameObject.CompareTag("Finish"))
        {
            SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+           Destroy(GameObject.FindGameObjectWithTag("MusicController"));
        }
     }
 }
