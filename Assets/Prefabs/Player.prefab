@@ -122,7 +122,7 @@ MonoBehaviour:
     m_Bits: 768
   groundCheck: {fileID: 4240376633752535156}
   groundCheckRadius: 0.5
-  waterTildAngle: 30
+  waterTildAngle: 20
 --- !u!114 &1513313827326240325
 MonoBehaviour:
   m_ObjectHideFlags: 0
