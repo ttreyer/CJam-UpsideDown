@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: Feet
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4240376633752535157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.015, y: -0.675, z: 0}
+  m_LocalPosition: {x: 0.015, y: -0.787, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4240376633826143637}
@@ -189,8 +189,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0075779855, y: -0.13892984}
-  m_Size: {x: 0.5806847, y: 1.0971403}
+  m_Offset: {x: 0, y: -0.14}
+  m_Size: {x: 0.72, y: 1.325}
   m_Direction: 0
 --- !u!114 &4240376633826143631
 MonoBehaviour:
@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbf4b69c90e6cc767ae87d5f3b10fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInWater: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 768
