@@ -24,7 +24,7 @@ public class RoomRobin : MonoBehaviour
 
         var angles = transform.eulerAngles;
         _isPitching = true;
-        transform.DORotate(new Vector3(angles.x, angles.y, targetAngle), duration).SetEase(Ease.InOutElastic).OnComplete(ToggleIsPitching);
+        transform.DORotate(new Vector3(angles.x, angles.y, targetAngle), duration).SetEase(Ease.InOutCubic).OnComplete(ToggleIsPitching);
     }
 
     private void ToggleIsPitching() => _isPitching = !_isPitching;
