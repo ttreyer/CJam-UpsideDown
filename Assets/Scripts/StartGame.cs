@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    private void OnJump(InputValue value) {
-        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+    private void OnJump(InputValue value)
+    {
+        TransitionController transitionController = GameObject.FindGameObjectWithTag("TransitionController").GetComponent<TransitionController>();
+        
+        transitionController.NextLevel();
     }
 }
