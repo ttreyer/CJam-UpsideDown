@@ -12549,17 +12549,17 @@ PrefabInstance:
     - target: {fileID: 2482651781365433143, guid: 769cdd94d3362c54788d76d786bcaf70,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2482651781365433143, guid: 769cdd94d3362c54788d76d786bcaf70,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2482651781365433143, guid: 769cdd94d3362c54788d76d786bcaf70,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2482651781365433143, guid: 769cdd94d3362c54788d76d786bcaf70,
         type: 3}
@@ -15693,41 +15693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f26e93183e0d04c229a1f0dfc677af82, type: 3}
---- !u!84 &1608739720
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 3
-  m_Width: 318
-  m_Height: 179
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 1
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1655709292
 GameObject:
   m_ObjectHideFlags: 0
@@ -15774,7 +15739,7 @@ PrefabInstance:
     - target: {fileID: 7942943622383574226, guid: b9f25ebe69637d786b8e1f237c4ef9b1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7942943622383574239, guid: b9f25ebe69637d786b8e1f237c4ef9b1,
         type: 3}
@@ -15845,11 +15810,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicControllerBallRoom
       objectReference: {fileID: 0}
-    - target: {fileID: 7942943622383574226, guid: c8ea99c3bbe7962359ae14808393ebe8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7942943622383574239, guid: c8ea99c3bbe7962359ae14808393ebe8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15907,6 +15867,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ea99c3bbe7962359ae14808393ebe8, type: 3}
+--- !u!84 &1789279755
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 3
+  m_Width: 159
+  m_Height: 89
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 1
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &1813524643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6952000758436474990, guid: f26e93183e0d04c229a1f0dfc677af82,
