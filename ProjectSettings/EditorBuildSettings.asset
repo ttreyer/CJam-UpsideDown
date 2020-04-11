@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MachineRooms/MR02.unity
     guid: 26eb578ce67998a49897538dc6b15228
   - enabled: 1
+    path: Assets/Scenes/MachineRooms/MR03.unity
+    guid: e53b7dd997ee25642b99b3d1ce2c9cee
+  - enabled: 1
     path: Assets/Scenes/BallRooms/BallRoom1.unity
     guid: 164625af735e64f608b4cfa494f26feb
   m_configObjects: {}
