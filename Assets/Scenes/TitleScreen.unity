@@ -1684,6 +1684,11 @@ PrefabInstance:
       propertyPath: fadeOutDuration
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7512472161565815203, guid: 6fb06b451b39d4ce49b726f36b161be4,
+        type: 3}
+      propertyPath: fadeInDuration
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7512472162297184464, guid: 6fb06b451b39d4ce49b726f36b161be4,
         type: 3}
       propertyPath: m_LocalPosition.z
