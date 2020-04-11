@@ -27,7 +27,7 @@ public class TransitionController : MonoBehaviour
 
     public void NextLevel()
     {
-        _image.DOFade(255, fadeInDuration).OnComplete(() =>
+        _image.DOFade(1, fadeInDuration).OnComplete(() =>
         {
             SceneManager.LoadScene ((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
             Destroy(GameObject.FindGameObjectWithTag("MusicController"));
