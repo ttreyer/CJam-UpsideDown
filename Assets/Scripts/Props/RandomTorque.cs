@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RandomTorque : MonoBehaviour
 {
+    public Vector2 intensity = new Vector2(5f, 15f);
     private Rigidbody2D _rb;
 
     private void Awake()
@@ -14,6 +15,6 @@ public class RandomTorque : MonoBehaviour
     public void ApplyRotation()
     {
         int direction = (Random.Range(0, 2) > 0) ? 1 : -1;
-        _rb.AddTorque(direction * Random.Range(5f, 15f));
+        _rb.AddTorque(direction * Random.Range(intensity.x, intensity.y));
     }
 }
