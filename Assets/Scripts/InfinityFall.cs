@@ -17,6 +17,11 @@ public class InfinityFall : MonoBehaviour
     [SerializeField] private float period = 1.0f;
 
     private float nextPopTime = 0.0f;
+
+    private void Start() {
+        nextPopTime = Time.time;
+    }
+
     void Update()
     {
         foreach (Transform child in transform)
