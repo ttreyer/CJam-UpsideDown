@@ -9,7 +9,7 @@ public class WaterToggle : MonoBehaviour {
     public UnityEvent onWaterExit;
 
     private bool IsWater(GameObject other) =>
-        (whatIsWater.value | other.layer) != 0;
+        ((whatIsWater & (1 << other.layer)) != 0);
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (IsWater(collision.gameObject))

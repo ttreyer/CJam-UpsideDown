@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whatIsWater:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16
   onWaterEnter:
     m_PersistentCalls:
       m_Calls:
