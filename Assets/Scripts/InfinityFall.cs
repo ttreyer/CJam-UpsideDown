@@ -26,7 +26,7 @@ public class InfinityFall : MonoBehaviour
         if (Time.time > nextPopTime ) {
             nextPopTime += period;
             Debug.Log("Now");
-            Instantiate(myPrefab, new Vector3(Random.Range(minX, maxX), Random.Range(minTopY, maxTopY), 0), Quaternion.identity, transform.parent);
+            Instantiate(myPrefab, new Vector3(Random.Range(minX, maxX), Random.Range(minTopY, maxTopY), -2.0f), Quaternion.identity, transform);
         }
     }
 }
