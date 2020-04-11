@@ -35,10 +35,17 @@ public class MusicController : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-        
-        musicAir.Play();
-        musicWater.Play();
-        musicAir.volume = 0.0f;
+
+        if (musicAir)
+        {
+            musicAir.Play();
+        }
+
+        if (musicWater)
+        {
+            musicWater.Play();
+            musicWater.volume = 0.0f;
+        }
     }
 
     public void ToggleMusicInWater()
