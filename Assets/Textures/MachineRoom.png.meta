@@ -179,6 +179,27 @@ TextureImporter:
   - first:
       213: 4777047489092167820
     second: MachineRoom_44
+  - first:
+      213: 2045224563953738938
+    second: MachineRoom_45
+  - first:
+      213: 3795213566846984919
+    second: MachineRoom_46
+  - first:
+      213: 8377015166206140642
+    second: MachineRoom_47
+  - first:
+      213: 8105781379298448881
+    second: MachineRoom_48
+  - first:
+      213: -8260268684697141488
+    second: MachineRoom_49
+  - first:
+      213: 6283378698674069319
+    second: MachineRoom_50
+  - first:
+      213: 2690205632087194426
+    second: MachineRoom_51
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1244,7 +1265,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1252,6 +1273,153 @@ TextureImporter:
       bones: []
       spriteID: c88a286a16b7b4240800000000000000
       internalID: 4777047489092167820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_45
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4ad54a7e8126c10800000000000000
+      internalID: 2045224563953738938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d268a291ae4ba430800000000000000
+      internalID: 3795213566846984919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_47
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0e6cb09e2214470800000000000000
+      internalID: 8377015166206140642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_48
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f55f0cd7358d7070800000000000000
+      internalID: 8105781379298448881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ff7536561ad5d80800000000000000
+      internalID: -8260268684697141488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f59bbb2ab033750800000000000000
+      internalID: 6283378698674069319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_51
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bff41e4c7855520800000000000000
+      internalID: 2690205632087194426
       vertices: []
       indices: 
       edges: []
