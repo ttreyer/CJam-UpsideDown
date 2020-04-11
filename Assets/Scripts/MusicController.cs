@@ -38,11 +38,14 @@ public class MusicController : MonoBehaviour
 
         if (musicAir)
         {
-            musicAir.volume = 0.0f;
             musicAir.Play();
         }
-        
-        if (musicWater) musicWater.Play();
+
+        if (musicWater)
+        {
+            musicWater.Play();
+            musicWater.volume = 0.0f;
+        }
     }
 
     public void ToggleMusicInWater()
