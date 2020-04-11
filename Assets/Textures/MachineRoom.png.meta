@@ -44,6 +44,141 @@ TextureImporter:
   - first:
       213: 177082269451076076
     second: MachineRoom_13
+  - first:
+      213: 187325125245316796
+    second: MachineRoom_0
+  - first:
+      213: 7685404236513981632
+    second: MachineRoom_1
+  - first:
+      213: 3999754258665383270
+    second: MachineRoom_2
+  - first:
+      213: 510155752172762488
+    second: MachineRoom_3
+  - first:
+      213: -8496998990618314861
+    second: MachineRoom_4
+  - first:
+      213: 4826687157261749817
+    second: MachineRoom_5
+  - first:
+      213: 3045135008668828005
+    second: MachineRoom_6
+  - first:
+      213: -3952106526493856422
+    second: MachineRoom_7
+  - first:
+      213: 5818910067814488980
+    second: MachineRoom_8
+  - first:
+      213: -435280960756976301
+    second: MachineRoom_9
+  - first:
+      213: -8744291389445236787
+    second: MachineRoom_10
+  - first:
+      213: 2717745838601235011
+    second: MachineRoom_11
+  - first:
+      213: -4694142003368369395
+    second: MachineRoom_12
+  - first:
+      213: 5266955074629918023
+    second: MachineRoom_13
+  - first:
+      213: -3933534978378901431
+    second: MachineRoom_14
+  - first:
+      213: 3156966697570503481
+    second: MachineRoom_15
+  - first:
+      213: 4181370262232084393
+    second: MachineRoom_16
+  - first:
+      213: 8889008066040272928
+    second: MachineRoom_17
+  - first:
+      213: -2719157384941705483
+    second: MachineRoom_18
+  - first:
+      213: 8611328261342191652
+    second: MachineRoom_19
+  - first:
+      213: -404740681528637885
+    second: MachineRoom_20
+  - first:
+      213: -1556609853805457243
+    second: MachineRoom_21
+  - first:
+      213: 543885940552873153
+    second: MachineRoom_22
+  - first:
+      213: 7664366201769704703
+    second: MachineRoom_23
+  - first:
+      213: 4934494092283621235
+    second: MachineRoom_24
+  - first:
+      213: 896154609862067759
+    second: MachineRoom_25
+  - first:
+      213: -8712199895844939179
+    second: MachineRoom_26
+  - first:
+      213: 1938742165294470122
+    second: MachineRoom_27
+  - first:
+      213: -711700487215942213
+    second: MachineRoom_28
+  - first:
+      213: -5145550090793371589
+    second: MachineRoom_29
+  - first:
+      213: 7537302878526015696
+    second: MachineRoom_30
+  - first:
+      213: -1764900814112502507
+    second: MachineRoom_31
+  - first:
+      213: -3616989950268118560
+    second: MachineRoom_32
+  - first:
+      213: 2437633368531706131
+    second: MachineRoom_33
+  - first:
+      213: 159179612927397009
+    second: MachineRoom_34
+  - first:
+      213: 5224080488779158655
+    second: MachineRoom_35
+  - first:
+      213: -2742646035641958322
+    second: MachineRoom_36
+  - first:
+      213: -1585170855136139055
+    second: MachineRoom_37
+  - first:
+      213: -7478701138891019789
+    second: MachineRoom_38
+  - first:
+      213: -8541464862709186434
+    second: MachineRoom_39
+  - first:
+      213: 1510209470418155355
+    second: MachineRoom_40
+  - first:
+      213: 2483663212492406380
+    second: MachineRoom_41
+  - first:
+      213: -5710836725676067060
+    second: MachineRoom_42
+  - first:
+      213: 1814906141011580384
+    second: MachineRoom_43
+  - first:
+      213: 4777047489092167820
+    second: MachineRoom_44
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -191,8 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4a9953d9212a2730800000000000000
-      internalID: 3975026084631124554
+      spriteID: cbea0cb7533899200800000000000000
+      internalID: 187325125245316796
       vertices: []
       indices: 
       edges: []
@@ -201,7 +336,7 @@ TextureImporter:
       name: MachineRoom_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 224
         width: 32
         height: 32
@@ -212,8 +347,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bba4533559c947fc0800000000000000
-      internalID: -3497998845399971141
+      spriteID: 0c4b2b02f6a08aa60800000000000000
+      internalID: 7685404236513981632
       vertices: []
       indices: 
       edges: []
@@ -222,8 +357,8 @@ TextureImporter:
       name: MachineRoom_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -233,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72c286e586e077420800000000000000
-      internalID: 2627584749017246759
+      spriteID: 6652b908e4bf18730800000000000000
+      internalID: 3999754258665383270
       vertices: []
       indices: 
       edges: []
@@ -243,7 +378,175 @@ TextureImporter:
       name: MachineRoom_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875316424ff641700800000000000000
+      internalID: 510155752172762488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397b753ef68941a80800000000000000
+      internalID: -8496998990618314861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ec68a8566dbf240800000000000000
+      internalID: 4826687157261749817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561cfc4182e724a20800000000000000
+      internalID: 3045135008668828005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5da4d5ad0c4729c0800000000000000
+      internalID: -3952106526493856422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bd60470ebe0c050800000000000000
+      internalID: 5818910067814488980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355f69cb54295f9f0800000000000000
+      internalID: -435280960756976301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc71c9f7f4906a680800000000000000
+      internalID: -8744291389445236787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_11
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 160
         width: 32
         height: 32
@@ -254,14 +557,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3394971a06caab5a0800000000000000
-      internalID: -6504697180757341901
+      spriteID: 34a6f93e07f57b520800000000000000
+      internalID: 2717745838601235011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_4
+      name: MachineRoom_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03ecf3f7be0bdeb0800000000000000
+      internalID: -4694142003368369395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dd14f1cbbf71940800000000000000
+      internalID: 5266955074629918023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948d62627c64969c0800000000000000
+      internalID: -3933534978378901431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b8d603c7ccfcb20800000000000000
+      internalID: 3156966697570503481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_16
       rect:
         serializedVersion: 2
         x: 0
@@ -275,14 +662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3eeeb076d64ecc7e0800000000000000
-      internalID: -1743767797167821085
+      spriteID: 9afa9b28916370a30800000000000000
+      internalID: 4181370262232084393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_5
+      name: MachineRoom_17
       rect:
         serializedVersion: 2
         x: 64
@@ -296,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c54eb25414c5d7e70800000000000000
-      internalID: 9114542656270885980
+      spriteID: 02899e57db91c5b70800000000000000
+      internalID: 8889008066040272928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_6
+      name: MachineRoom_18
       rect:
         serializedVersion: 2
         x: 128
@@ -317,14 +704,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c043f6de7241afca0800000000000000
-      internalID: -5982446993288514548
+      spriteID: 5f66b2ed3cc934ad0800000000000000
+      internalID: -2719157384941705483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_7
+      name: MachineRoom_19
       rect:
         serializedVersion: 2
         x: 192
@@ -338,14 +725,203 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1004ea8992392b850800000000000000
-      internalID: 6391332628056653825
+      spriteID: 420659dcd65918770800000000000000
+      internalID: 8611328261342191652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_8
+      name: MachineRoom_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346065b9e72126af0800000000000000
+      internalID: -404740681528637885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a09d02d59fc56ae0800000000000000
+      internalID: -1556609853805457243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4bbfc91654c8700800000000000000
+      internalID: 543885940552873153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc3ef4f37c4d5a60800000000000000
+      internalID: 7664366201769704703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f24dc9b38da7440800000000000000
+      internalID: 4934494092283621235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2648a0aed7cf6c00800000000000000
+      internalID: 896154609862067759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a97fb9a5c081780800000000000000
+      internalID: -8712199895844939179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3d2793abbc7ea10800000000000000
+      internalID: 1938742165294470122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb575097d288f16f0800000000000000
+      internalID: -711700487215942213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_29
       rect:
         serializedVersion: 2
         x: 32
@@ -359,14 +935,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ec3af30e5ef3af50800000000000000
-      internalID: 6891631534554103015
+      spriteID: b38384864755798b0800000000000000
+      internalID: -5145550090793371589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_9
+      name: MachineRoom_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8821f9801e99860800000000000000
+      internalID: 7537302878526015696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_31
       rect:
         serializedVersion: 2
         x: 96
@@ -380,14 +977,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650dfc2c4fbb44170800000000000000
-      internalID: 8161855084616994902
+      spriteID: 51dc6077f00d187e0800000000000000
+      internalID: -1764900814112502507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_10
+      name: MachineRoom_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e96c1acdceddcdc0800000000000000
+      internalID: -3616989950268118560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_33
       rect:
         serializedVersion: 2
         x: 160
@@ -401,14 +1019,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb6245228b0b27480800000000000000
-      internalID: -8902859208461637957
+      spriteID: 311a8ff22a634d120800000000000000
+      internalID: 2437633368531706131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_11
+      name: MachineRoom_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c850cb305853200800000000000000
+      internalID: 159179612927397009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_35
       rect:
         serializedVersion: 2
         x: 224
@@ -422,14 +1061,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99c1a8d34124b6070800000000000000
-      internalID: 8100641009455209625
+      spriteID: f741bb3b689af7840800000000000000
+      internalID: 5224080488779158655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_12
+      name: MachineRoom_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e408de436f920f9d0800000000000000
+      internalID: -2742646035641958322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8ee4f7187500ae0800000000000000
+      internalID: -1585170855136139055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9671320f0563890800000000000000
+      internalID: -7478701138891019789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e700db446fe967980800000000000000
+      internalID: -8541464862709186434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_40
       rect:
         serializedVersion: 2
         x: 128
@@ -443,14 +1166,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21278045a18ecede0800000000000000
-      internalID: -1302410992440282606
+      spriteID: b5774bc038755f410800000000000000
+      internalID: 1510209470418155355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MachineRoom_13
+      name: MachineRoom_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eb052688eb77220800000000000000
+      internalID: 2483663212492406380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_42
       rect:
         serializedVersion: 2
         x: 192
@@ -464,8 +1208,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce1c6a6c26f157200800000000000000
-      internalID: 177082269451076076
+      spriteID: c07b2db51480fb0b0800000000000000
+      internalID: -5710836725676067060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e59babf487df2910800000000000000
+      internalID: 1814906141011580384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MachineRoom_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88a286a16b7b4240800000000000000
+      internalID: 4777047489092167820
       vertices: []
       indices: 
       edges: []
