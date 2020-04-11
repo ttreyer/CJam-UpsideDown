@@ -6,6 +6,14 @@
             "id": "ee9e0734-c947-424c-952c-9c12abdc3499",
             "actions": [
                 {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "d4a90d92-10f6-44d0-a093-3a9d012ebdcc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "ccce520d-8e4a-41b7-a142-e4e662b71c2e",
@@ -176,6 +184,28 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9f2a63bc-2541-4fcc-90de-05155cbeb00c",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aea3fbec-8067-485b-ae45-3c80d38b46b3",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
