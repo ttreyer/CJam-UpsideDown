@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Deadly Item
+  - MusicController
   layers:
   - Default
   - TransparentFX
