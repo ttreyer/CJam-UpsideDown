@@ -417,9 +417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  jumpVelocity: 7
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
+  jumpVelocity: 8.5
+  fallMultiplier: 3
+  lowJumpMultiplier: 2.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 768

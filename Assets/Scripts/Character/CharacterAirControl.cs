@@ -30,7 +30,7 @@ public class CharacterAirControl : MonoBehaviour
 
     private float inputMovement;
     private float movement;
-    private bool jump;
+    private bool jump, doJump;
     private bool waterTransition;
     private bool isGrounded;
 
@@ -38,8 +38,10 @@ public class CharacterAirControl : MonoBehaviour
     private void OnMovement(InputValue value) =>
         inputMovement = value.Get<float>();
 
-    private void OnJump(InputValue value) =>
+    private void OnJump(InputValue value) {
         jump = value.Get<float>() > 0f;
+        doJump = jump;
+    }
 
     /* Setup */
     private void Awake()
@@ -78,8 +80,10 @@ public class CharacterAirControl : MonoBehaviour
     {
         var velocity = new Vector2(movement * maxSpeed, rbody.velocity.y);
 
-        if (jump && CanJump())
+        if (doJump && CanJump()) {
             velocity.y = jumpVelocity;
+            doJump = false;
+        }
 
         if(waterTransition && rbody.velocity.y > waterJumpMinVRequired)
         {
