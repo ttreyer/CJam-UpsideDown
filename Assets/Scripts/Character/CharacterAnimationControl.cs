@@ -18,7 +18,7 @@ public class CharacterAnimationControl : MonoBehaviour
     private bool[] _tildLR = new[] {true, true};
     private bool _isGrounded = true;
     private float _inputMovement;
-    private bool _jump;
+    public bool _jump;
 
     private void Awake()
     {
@@ -30,8 +30,13 @@ public class CharacterAnimationControl : MonoBehaviour
     private void OnMovement(InputValue value) =>
         _inputMovement = value.Get<float>();
 
-    private void OnJump(InputValue value) =>
-        _jump = value.Get<float>() > 0f;
+    // private void OnJump(InputValue value) =>
+    //     _jump = value.Get<float>() > 0f;
+
+    public void SetJump(bool isJumping) {
+        _jump = isJumping;
+        _animator.SetBool("isJumping", _jump);
+    }
 
     private void FixedUpdate()
     {

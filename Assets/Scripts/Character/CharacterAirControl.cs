@@ -34,6 +34,8 @@ public class CharacterAirControl : MonoBehaviour
     private bool waterTransition;
     private bool isGrounded;
 
+    private CharacterAnimationControl animControl;
+
     /* Input handling */
     private void OnMovement(InputValue value) =>
         inputMovement = value.Get<float>();
@@ -47,6 +49,7 @@ public class CharacterAirControl : MonoBehaviour
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
+        animControl = GetComponentInChildren<CharacterAnimationControl>();
     }
 
     private void OnEnable()
@@ -61,6 +64,8 @@ public class CharacterAirControl : MonoBehaviour
 
     private void Update()
     {
+        animControl.SetJump(doJump);
+
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, whatIsGround);
         Debug.DrawLine(groundCheck.position, groundCheck.position + groundCheckRadius * Vector3.down);
         if (isGrounded)
@@ -83,6 +88,7 @@ public class CharacterAirControl : MonoBehaviour
         if (doJump && CanJump()) {
             velocity.y = jumpVelocity;
             doJump = false;
+            animControl.SetJump(doJump);
         }
 
         if(waterTransition && rbody.velocity.y > waterJumpMinVRequired)
