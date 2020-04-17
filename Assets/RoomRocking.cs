@@ -8,9 +8,11 @@ public class RoomRocking : MonoBehaviour {
     [Range(0, Mathf.PI)]
     public float startOffset = 0f;
 
+    private Rigidbody2D rbody;
     private float startTime;
 
     private void Awake() {
+        rbody = GetComponent<Rigidbody2D>();
         startTime = Time.time + startOffset;
     }
 
@@ -23,6 +25,6 @@ public class RoomRocking : MonoBehaviour {
         float rock = Mathf.Sin(t * speed);
         float angle = RemapRange(rock, -1f, 1f, rockingBoundaries.x, rockingBoundaries.y);
 
-        transform.localRotation = Quaternion.Euler(0f, 0f, angle);
+        rbody.SetRotation(angle);
     }
 }
