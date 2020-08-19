@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6952000758436474985}
   - component: {fileID: 6952000758436474987}
   - component: {fileID: 1602513719725731622}
-  - component: {fileID: 3277188403694484182}
   - component: {fileID: 853832422883166366}
   m_Layer: 9
   m_Name: Box
@@ -72,6 +71,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -152,18 +152,8 @@ MonoBehaviour:
   onWaterEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3277188403694484182}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 853832422883166366}
+        m_TargetAssemblyTypeName: 
         m_MethodName: ApplyRotation
         m_Mode: 1
         m_Arguments:
@@ -176,31 +166,7 @@ MonoBehaviour:
         m_CallState: 2
   onWaterExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3277188403694484182}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3277188403694484182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6952000758436474991}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d8b618052665541bb5d49a25d365b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnitude: 10
+      m_Calls: []
 --- !u!114 &853832422883166366
 MonoBehaviour:
   m_ObjectHideFlags: 0

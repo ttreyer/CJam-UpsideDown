@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4213920772064933097}
   - component: {fileID: 4213920772064933096}
   - component: {fileID: 4213920772064933099}
-  - component: {fileID: 7849349098888302222}
   - component: {fileID: 1910099406}
   m_Layer: 8
   m_Name: Chair
@@ -52,6 +51,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 1
   m_AngularDrag: 1
   m_GravityScale: 1
@@ -186,19 +186,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16051078, y: 0.47418654}
   m_EdgeRadius: 0
---- !u!114 &7849349098888302222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4213920772064933093}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d8b618052665541bb5d49a25d365b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnitude: 10
 --- !u!114 &1910099406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +204,8 @@ MonoBehaviour:
   onWaterEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7849349098888302222}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -231,7 +219,8 @@ MonoBehaviour:
   onWaterExit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7849349098888302222}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
