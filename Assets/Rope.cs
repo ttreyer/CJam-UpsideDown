@@ -18,19 +18,20 @@ public class Rope : MonoBehaviour {
 
     private void GenerateRope() {
         Vector2 startToEnd = endAnchor.position - startAnchor.position;
-        Vector2 linkVec = startToEnd.normalized * linkLength;
+        Vector2 linkVec = -startToEnd.normalized * linkLength;
         int linksCount = Mathf.FloorToInt(startToEnd.magnitude / linkLength);
 
         Rigidbody2D parent = startObject;
         segments.Add(parent.gameObject);
 
         if (linksCount > 1) {
-            for (int i = 0; i < linksCount - 1; ++i) {
+            for (int i = 0; i < linksCount; ++i) {
                 GameObject link = Instantiate(linkPrefab, transform);
                 link.transform.position = parent.position + linkVec;
 
                 HingeJoint2D joint = link.GetComponent<HingeJoint2D>();
-                joint.connectedAnchor = linkVec;
+                joint.anchor = linkVec;
+                joint.connectedAnchor = Vector2.zero;
                 joint.connectedBody = parent;
 
                 segments.Add(link);
@@ -42,7 +43,7 @@ public class Rope : MonoBehaviour {
         lastLink.connectedBody = parent;
         lastLink.autoConfigureConnectedAnchor = false;
         lastLink.anchor = endAnchor.localPosition;
-        lastLink.connectedAnchor = linkVec;
+        lastLink.connectedAnchor = Vector2.zero;
         segments.Add(endAnchor.gameObject);
     }
 
